@@ -140,9 +140,9 @@
   #define THERMAL_PROTECTION_PERIOD 40        // Seconds
   #define THERMAL_PROTECTION_HYSTERESIS 4     // Degrees Celsius
 
-  //#define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
+  #define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
   #if BOTH(ADAPTIVE_FAN_SLOWING, PIDTEMP)
-    //#define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303
+    #define NO_FAN_SLOWING_IN_PID_TUNING   // Don't slow fan speed during M303
   #endif
 
   /**
@@ -399,7 +399,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN -1
+#define E0_AUTO_FAN_PIN P2_04
 #define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
@@ -2781,10 +2781,10 @@
 /**
  * WiFi Support (Espressif ESP32 WiFi)
  */
-//#define WIFISUPPORT
+#define WIFISUPPORT 
 #if ENABLED(WIFISUPPORT)
-  #define WIFI_SSID "Wifi SSID"
-  #define WIFI_PWD  "Wifi Password"
+  #define WIFI_SSID "LanSolo"
+  #define WIFI_PWD  "HanShotFirst"
   //#define WEBSUPPORT        // Start a webserver with auto-discovery
   //#define OTASUPPORT        // Support over-the-air firmware updates
 #endif
