@@ -2092,9 +2092,9 @@
    */
   #define HYBRID_THRESHOLD
 
-  #define X_HYBRID_THRESHOLD     155  // [mm/s]
+  #define X_HYBRID_THRESHOLD     125  // [mm/s]
   #define X2_HYBRID_THRESHOLD    100
-  #define Y_HYBRID_THRESHOLD     155
+  #define Y_HYBRID_THRESHOLD     125
   #define Y2_HYBRID_THRESHOLD    100
   #define Z_HYBRID_THRESHOLD       5
   #define Z2_HYBRID_THRESHOLD      5
@@ -2783,8 +2783,8 @@
  */
 #define WIFISUPPORT 
 #if ENABLED(WIFISUPPORT)
-  #define WIFI_SSID "LanSolo"
-  #define WIFI_PWD  "HanShotFirst"
+  #define WIFI_SSID "1234"
+  #define WIFI_PWD  "1234"
   //#define WEBSUPPORT        // Start a webserver with auto-discovery
   //#define OTASUPPORT        // Support over-the-air firmware updates
 #endif
